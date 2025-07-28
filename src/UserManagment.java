@@ -18,6 +18,10 @@ public class UserManagment {
         public boolean firstStart;
         public int MaxHealth;
         public int currentHealth;
+        public int hunger;
+        public int thirst;
+        public int currentDay;
+        public int hour;
 
         // Ein leerer Konstruktor ist für Jackson (JSON-Bibliothek) wichtig.
         public User() {}
@@ -25,6 +29,12 @@ public class UserManagment {
         public User(String name) {
             this.name = name;
             this.firstStart = true;
+            this.MaxHealth = 0;
+            this.currentHealth = 0;
+            this.hunger = 0;
+            this.thirst = 0;
+            this.currentDay = 0;
+            this.hour = 0;
         }
 
         // Eine toString()-Methode ist nützlich für Debugging.
